@@ -2,11 +2,10 @@
 
 class EmailAddressParser
   
-  attr_accessor :email, :parser
+  attr_accessor :name, :csv_emails
   
-  def initialize(parser)
-    @parser = parser
-  end 
+  def initialize(csv_emails)
+    
 # emails. The parse method on the class should separate them into
 # unique email addresses. The delimiters to support are commas (',')
 # or whitespace (' ').
